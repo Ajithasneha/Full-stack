@@ -1,23 +1,23 @@
 import './Fund.css';
+import { Link } from "react-router-dom";
 function Fund(){
     return(
-    <>
-    <div style={{textAlign:"center"}}>
+    <> <div style={{textAlign:"center"}}>
         <h1 style={{color:"navy",display:"inline-block",marginTop:"auto"}}>VJ CHIT FUND</h1>
-        <h5 style={{display:"inline-block",color:"navy",marginTop:"5px",marginLeft:"500px"}}>
+        <h5 className='contact'>
         <p>☎️ +91 8122331408</p>
-        <p>☎️ +91 7708585093 </p></h5></div>
+        <p>☎️ +91 7708585093 </p>
+        <Link to="/cont">Contact Us</Link></h5> 
+        </div>
         <nav style={{backgroundColor:"black",color:"white",height:"35px",textAlign:"center",marginBottom:"10px"}}><h1>TERM CHIT DETAILS - 10 MONTHS</h1></nav>
-       <div style={{textAlign:"center"}}>
-        <table style={{display:"inline-block",borderRight:"3px dotted navy"}}>
+        <div style={{textAlign:"center"}}>
+        <table style={{display:"inline-block",borderRight:"3px dotted navy"}} className='table'>
             <tr>
             <h3 style={{paddingLeft:"70px"}}>CHIT VALUE</h3>
             <h2 style={{color:"navy",paddingLeft:"70px"}}>50,000</h2>
-            {/* <div className="button"> */}
             <button  style={{borderRadius:"20px",height:"40px",width:"80px",marginRight:"5px",cursor:"pointer"}}>Daily Rs.250</button>
             <button  style={{cursor:"pointer",borderRadius:"20px",height:"40px",width:"80px",marginRight:"5px"}}>Weekly Rs.1250</button>
             <button  style={{cursor:"pointer",borderRadius:"20px",height:"40px",width:"80px",marginRight:"5px"}}>Monthly Rs.5000</button>
-                  {/* </div> */}
                     <tr  style={{color:"navy"}}>
                     <td><h4>Inst No.</h4></td>
                     <td style={{paddingLeft:"50px"}}><h4>Prize Amount</h4></td>
@@ -64,7 +64,7 @@ function Fund(){
                 </tr>
                 </tr>
                 </table>
-            <table style={{display:"inline-block",borderRight:"3px dotted navy"}}>
+            <table style={{display:"inline-block",borderRight:"3px dotted navy"}}  className='table'>
             <tr>
             <h3 style={{paddingLeft:"70px"}}>CHIT VALUE</h3> 
             <h2 style={{color:"navy",paddingLeft:"70px"}}>1,00,000</h2>
@@ -119,8 +119,8 @@ function Fund(){
                 </tr>   
                 </tr>
                 </table>
-            <table style={{display:"inline-block"}}>  
-        <tr>   
+            <table style={{display:"inline-block"}}  className='table'>  
+            <tr>   
             <h3 style={{paddingLeft:"70px"}}>CHIT VALUE</h3>
             <h2 style={{color:"navy",paddingLeft:"70px"}}>2,00,000</h2>
             {/* <div className="button"> */}
